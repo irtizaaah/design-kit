@@ -1,0 +1,52 @@
+.Select{
+    margin: var(--margin);
+}
+
+.select_button{
+    width: var(--width);
+    height: var(--height);
+    padding: var(--padding);
+
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+
+    background-color: var(--background-color);
+    color: var(--font-color);
+
+    transition: all 0.3s ease-in-out;
+}
+
+.option{
+    margin-left: var(--margin)
+}
+
+.select_button:focus{
+    border-color: var(--active-border-color);
+    transition: all 0.1s ease-in-out;
+}
+
+.select_button:hover{
+    border-color: var(--hover-border-color);
+    transition: all 0.1s ease-in-out;
+}
+/*
+
+.optionList{
+    width: var(--width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: var(--margin);
+}
+
+.optionlist-hide{
+    visibility: hidden;
+}
+.optionlist-show{
+    visibility: visible;
+}
+
+.option:hover{
+    background-color: var(--hover-option-background-color);
+} */

@@ -1,0 +1,41 @@
+.TextField{
+    display: flex;
+    flex-direction: column;
+
+    margin: var(--margin);
+}
+
+label{
+    font-size: var(--label-font-size);
+    color: var(--label-font-color);
+}
+input{
+    width: var(--width);
+    height: var(--height);
+
+    padding: var(--padding);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+
+    background-color: var(--background-color);
+    color: var(--input-font-color);
+}
+
+input:focus{
+    outline: none !important;
+    border: 1px solid var(--focus-background-color);
+}
+
+/* Placeholder font color */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--placeholder-font-color);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--placeholder-font-color);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--placeholder-font-color);
+  }

@@ -1,0 +1,27 @@
+.Option{
+    width: var(--width);
+    height: var(--height);
+
+    border-radius: var(--border-radius);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.option_button{
+    width: 98%;
+    height: 90%;
+    background-color: var(--background-color);
+    border-style: none;
+
+    border-radius: var(--border-radius);
+}
+
+.option_button:hover{
+    color: var(--hover-option-font-color);
+    background-color: var(--hover-option-background-color);
+}
+
+.option_button:active{
+    background-color: var(--active-option-background-color);
+}
