@@ -6,7 +6,6 @@ import "./Option.css";
 
 function Option(props) {
     const handleClick = () => {
-        console.log(props.value)
         props.setValue(props.value);
         props.setIsHidden(!props.isHidden);
     }

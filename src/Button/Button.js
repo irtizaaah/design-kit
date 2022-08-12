@@ -5,7 +5,7 @@ import "../styles.css";
 import "./Button.css";
 
 function Button(props) {
-    // processed input
+    // returns processed input: getInput(userInput, defaultInput)
     const style= getInput(props.style, defaultStyle);
     const name = getInput(props.name, "Submit");
     const onClick = getInput(props.onClick, () => console.log("Button Clicked"));

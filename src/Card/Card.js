@@ -6,7 +6,8 @@ import "../styles.css";
 import "./Card.css";
 
 function Card(props) {
-    // process input
+    
+    // returns processed input: getInput(userInput, defaultInput)
     const style = getInput(props.style, defaultCardStyle)
     return (
         <div className="Card" style = {style}>

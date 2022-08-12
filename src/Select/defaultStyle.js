@@ -4,6 +4,7 @@ const defaultSelectStyle={
     // size
     "--height": "40px",
     "--width": "220px",
+    "--border-width": "1px",
 
     // space
     "--padding": "10px",
@@ -32,6 +33,7 @@ const defaultLabelStyle={
 const defaultOptionsContainerStyle = {
     // shape
     "--border-radius": "5px",
+    "--border-width": "1px",
 
     // color
     "--border-color": colorPalette.tertiaryColor,

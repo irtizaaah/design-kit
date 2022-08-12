@@ -14,7 +14,7 @@ input{
     height: var(--height);
 
     padding: var(--padding);
-    border: 1px solid var(--border-color);
+    border: var(--border-width) solid var(--border-color);
     border-radius: var(--border-radius);
 
     background-color: var(--background-color);
@@ -23,7 +23,7 @@ input{
 
 input:focus{
     outline: none !important;
-    border: 1px solid var(--focus-background-color);
+    border: var(--border-width) solid var(--focus-background-color);
 }
 
 /* Placeholder font color */

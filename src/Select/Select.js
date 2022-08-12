@@ -12,7 +12,7 @@ function Select(props) {
     const [isHidden, setIsHidden] = useState(true);
     const [value, setValue] = useState(props.value ? props.value : "Select");
 
-    // processed input
+    // returns processed input: getInput(userInput, defaultInput)
     const onClick = () => setIsHidden(!isHidden);
     const options = getInput(props.options, ["Item 1","Item 2","Item 3"]);
     const label = getInput(props.label, "Select");

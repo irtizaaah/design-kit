@@ -5,7 +5,8 @@ import "../styles.css";
 import "./Label.css";
 
 function Label(props) {
-    // processed input
+    
+    // returns processed input: getInput(userInput, defaultInput)
     const name = getInput(props.name, "");
     const style = getInput(props.style, defaultStyle);
 

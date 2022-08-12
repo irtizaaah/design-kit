@@ -4,6 +4,7 @@ const defaultTextFieldStyle={
     // size
     "--height": "18px",
     "--width": "200px",
+    "--border-width": "1px",
 
     // space
     "--padding": "10px",

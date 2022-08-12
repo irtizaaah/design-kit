@@ -9,6 +9,7 @@ const defaultCardStyle={
     // size
     "--height": "500px",
     "--width": "350px",
+    "--border-width": "1px",
 
     // space
     "--padding": "50px",

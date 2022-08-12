@@ -4,6 +4,7 @@ const defaultStyle={
     // size
     "--width": "100px",
     "--height": "40px",
+    "--border-width": "1px",
 
     // space
     "--padding": "10px",
