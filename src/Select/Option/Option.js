@@ -5,17 +5,16 @@ import "../../styles.css"
 import "./Option.css";
 
 function Option(props) {
-    const [isSelected, setIsSelected] = useState(true);
-
     const handleClick = () => {
-        props.setName(props.name);
+        console.log(props.value)
+        props.setValue(props.value);
         props.setIsHidden(!props.isHidden);
     }
 
     return (
-        <div className="Option" style={props.style}>
+        <div className="Option" style={props.optionStyle}>
             <button className="option_button" onClick={handleClick}>
-                {props.name}
+                {props.value}
             </button>
         </div>
      );

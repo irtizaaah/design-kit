@@ -1,0 +1,17 @@
+.Card{
+    height: var(--height);
+    width: var(--width);
+
+    padding: var(--padding);
+    margin: var(--margins);
+
+    border-radius: var(--border-radius);
+
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 3px 6px var(--shadow-color);
+
+    display: var(--display);
+    justify-content: var(--justify-content);
+    align-items: var(--align-items);
+}

@@ -29,24 +29,3 @@
     border-color: var(--hover-border-color);
     transition: all 0.1s ease-in-out;
 }
-/*
-
-.optionList{
-    width: var(--width);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: var(--margin);
-}
-
-.optionlist-hide{
-    visibility: hidden;
-}
-.optionlist-show{
-    visibility: visible;
-}
-
-.option:hover{
-    background-color: var(--hover-option-background-color);
-} */

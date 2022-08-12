@@ -2,7 +2,7 @@ const getInput = (userInput, defaultInput) => { // checks whether to override de
   
     if(typeof userInput === 'object' && !(userInput instanceof Array)){ // user config overrides default config
         // arrays are objects in js, but the only objects we are filtering out are ones used for "style config" not arrays
-        if(userInput) return {...userInput, ...defaultInput};
+        if(userInput) return {...defaultInput, ...userInput};
         return defaultInput;
     }
 

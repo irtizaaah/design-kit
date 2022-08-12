@@ -16,13 +16,13 @@ function TextArea(props) {
     const placeHolder = getInput(props.placeHolder, "Type here...");
     const value = getInput(props.value, defaultValue);
     const onChange = getInput(props.onChange, (event)=>setDefaultValue(event.target.value));
-    const textAreaStyle = getInput(props.style, defaultTextAreaStyle);
+    const style = getInput(props.style, defaultTextAreaStyle);
     const labelStyle = getInput(props.labelStyle, defaultLabelStyle);
     const rows = getInput(props.rows, "4");
     const cols = getInput(props.cols, "50");
 
     return (
-        <div className="TextArea" style = {textAreaStyle}>
+        <div className="TextArea" style = {style}>
             <Label name={label} style={labelStyle}></Label>
             <textarea
                 className = "textarea_input"

@@ -7,14 +7,14 @@ const defaultTextAreaStyle={
 
     // space
     "--padding": "10px",
-    "--margin": "40px",
+    "--margin": "10px",
 
     // shape
     "--border-radius": "5px",
 
     // color
     "--background-color": colorPalette.tertiaryColorLightVariant,
-    "--focus-background-color": colorPalette.primaryColor,
+    "--focus-background-color": colorPalette.tertiaryColor,
     "--placeholder-font-color": colorPalette.tertiaryColor,
 
     "--border-color": colorPalette.backgroundColor,

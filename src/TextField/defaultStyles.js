@@ -7,7 +7,7 @@ const defaultTextFieldStyle={
 
     // space
     "--padding": "10px",
-    "--margin": "40px",
+    "--margin": "10px",
 
     // shape
     "--border-radius": "5px",
@@ -15,7 +15,7 @@ const defaultTextFieldStyle={
     // color
     "--background-color": colorPalette.backgroundColor,
     "--focus-background-color": colorPalette.primaryColor,
-    
+
     "--input-font-color": colorPalette.onBackgroundColor,
     "--placeholder-font-color": colorPalette.tertiaryColor,
     "--border-color": colorPalette.tertiaryColor,

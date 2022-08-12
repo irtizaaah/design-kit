@@ -10,14 +10,14 @@ import "./Select.css";
 
 function Select(props) {
     const [isHidden, setIsHidden] = useState(true);
-    const [name, setName] = useState(props.name ? props.name : "Select");
+    const [value, setValue] = useState(props.value ? props.value : "Select");
 
     // processed input
     const onClick = () => setIsHidden(!isHidden);
     const options = getInput(props.options, ["Item 1","Item 2","Item 3"]);
-    const selectStyle = getInput(props.style, defaultSelectStyle);
-    const labelStyle = getInput(props.labelStyle, defaultLabelStyle);
     const label = getInput(props.label, "Select");
+    const selectStyle = getInput(props.selectStyle, defaultSelectStyle);
+    const labelStyle = getInput(props.labelStyle, defaultLabelStyle);
     const optionsContainerStyle = getInput(props.optionsContainerStyle, defaultOptionsContainerStyle);
     const optionStyle = getInput(props.optionStyle, defaultOptionStyle);
 
@@ -25,9 +25,9 @@ function Select(props) {
         <div className="Select" style={selectStyle}>
             <div className = "select-wrapper">
                 <Label name={label} style={labelStyle}></Label>
-                <button className = "select_button" onClick = {onClick}>{name}</button>
+                <button className = "select_button" onClick = {onClick}>{value}</button>
             </div>
-            <OptionContainer options = {options} isHidden = {isHidden} setIsHidden = {setIsHidden} setName={setName} style={optionsContainerStyle} optionStyle={optionStyle}></OptionContainer>
+            <OptionContainer options = {options} isHidden = {isHidden} setIsHidden = {setIsHidden} setValue={setValue} optionsContainerStyle={optionsContainerStyle} optionStyle={optionStyle}></OptionContainer>
         </div>
      );
 }

@@ -17,11 +17,12 @@ function TextField(props) {
     const placeHolder = getInput(props.placeHolder, "Type here...");
     const value = getInput(props.value, defaultValue);
     const onChange = getInput(props.onChange, (event)=>setDefaultValue(event.target.value));
-    const textFieldStyle = getInput(props.style, defaultTextFieldStyle);
+    const style = getInput(props.style, defaultTextFieldStyle);
     const labelStyle = getInput(props.labelStyle, defaultLabelStyle);
+    
 
     return (
-        <div className="TextField" style = {textFieldStyle}>
+        <div className="TextField" style = {style}>
             <Label name={label} style={labelStyle}></Label>
             <input
                 type = {type} 

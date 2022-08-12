@@ -7,7 +7,7 @@ const defaultStyle={
 
     // space
     "--padding": "10px",
-    "--margin": "40px",
+    "--margin": "10px",
     
     // shape
     "--border-radius": "5px",
