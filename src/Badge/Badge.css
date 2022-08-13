@@ -1,0 +1,28 @@
+.Badge{
+    width: var(--width);
+    height: var(--height);
+    font-size: var(--font-size);
+
+    margin: var(--margin);
+    padding: var(--padding);
+
+    border-radius: var(--border-radius);
+
+    color: var(--font-color);
+    background-color: var(--background-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+    position: absolute;
+}
+
+.badge-show{
+    display: flex;
+}
+
+.badge-hide{
+    display: none;
+}

@@ -1,6 +1,6 @@
 import {colorPalette} from "../helper"; 
 
-const defaultCardStyle={
+const defaultStyle={
     // structure
     "--display": "flex",
     "--justify-content": "center",
@@ -23,4 +23,4 @@ const defaultCardStyle={
     "--border-color": colorPalette.backgroundColor,
     "--shadow-color" : colorPalette.shadowColor
 }
-export {defaultCardStyle}
+export default defaultStyle;

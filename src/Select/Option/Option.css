@@ -1,8 +1,8 @@
 .Option{
-    width: var(--width);
-    height: var(--height);
+    width: var(--option-width);
+    height: var(--option-height);
 
-    border-radius: var(--border-radius);
+    border-radius: var(--option-border-radius);
 
     display: flex;
     justify-content: center;
@@ -11,17 +11,22 @@
 .option_button{
     width: 98%;
     height: 90%;
-    background-color: var(--background-color);
+
+    padding: var(--option-padding);
+    text-align: left;
+
+    color: var(--option-font-color);
+    background-color: var(--option-background-color);
     border-style: none;
 
-    border-radius: var(--border-radius);
+    border-radius: var(--option-border-radius);
 }
 
 .option_button:hover{
-    color: var(--hover-option-font-color);
-    background-color: var(--hover-option-background-color);
+    color: var(--option-hover-font-color);
+    background-color: var(--option-hover-background-color);
 }
 
 .option_button:active{
-    background-color: var(--active-option-background-color);
+    background-color: var(--option-active-background-color);
 }

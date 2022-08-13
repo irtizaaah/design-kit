@@ -1,6 +1,6 @@
 import {colorPalette} from "../helper"; 
 
-const defaultTextFieldStyle={
+const defaultStyle={
     // size
     "--height": "18px",
     "--width": "200px",
@@ -20,12 +20,11 @@ const defaultTextFieldStyle={
     "--input-font-color": colorPalette.onBackgroundColor,
     "--placeholder-font-color": colorPalette.tertiaryColor,
     "--border-color": colorPalette.tertiaryColor,
-    "--shadow-color" : colorPalette.shadowColor
-}
+    "--shadow-color" : colorPalette.shadowColor,
 
-const defaultLabelStyle={
+    // Label
     "--label-font-size" : "0.8rem",
-    "--label-font-color": colorPalette.secondaryColor,
+    "--label-font-color": colorPalette.onBackgroundColor,
 }
 
-export {defaultTextFieldStyle, defaultLabelStyle}
+export default defaultStyle

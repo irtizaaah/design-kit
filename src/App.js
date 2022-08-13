@@ -6,6 +6,10 @@ import Button from "./Button/Button";
 import TextField from "./TextField/TextField";
 import TextArea from "./TextArea/TextArea";
 import Card from "./Card/Card";
+import Badge from "./Badge/Badge";
+import IconButton from "./IconButton/IconButton";
+
+import img from "./forward.png";
 
 function App() {
   const [firstName, setFirstName] = useState("");
@@ -35,7 +39,10 @@ function App() {
     >
     </Select>
     <TextArea value={comment} onChange = {(event)=>setComment(event.target.value)}></TextArea>
-    <Button name="Done" onClick={()=>console.log("Form Submitted")}></Button>
+    <div style={{"display":"flex", "justifyContent":"space-between"}}>
+      <Button name="Done" onClick={()=>console.log("Form Submitted")}></Button>
+      <IconButton icon = {img}></IconButton>
+    </div>
   </div>
   
   return (

@@ -1,11 +1,11 @@
 .OptionsContainer{
-    width: var(--width);
+    width: var(--options_container-width);
 
-    border: var(--border-width) solid var(--border-color);
-    border-radius: var(--border-radius);
-    background-color: var(--background-color);
+    border: var(--options_container-border-width) solid var(--options_container-border-color);
+    border-radius: var(--options_container-border-radius);
+    background-color: var(--options_container-background-color);
 
-    box-shadow: 0px 3px 6px var(--shadow-color);
+    box-shadow: 0px 3px 6px var(--options_container-shadow-color);
 
     display: flex;
     flex-direction: column;

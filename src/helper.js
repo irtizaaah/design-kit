@@ -21,9 +21,9 @@ const colorPalette = {
 
     // A secondary color provides more ways to accent and distinguish your product. 
     // This is optional (a primary color can replace this).
-    "secondaryColor": "#06283D",
-    "secondaryColorDarkVariant" : "#06283D",
-    "secondaryColorLightVariant" : "#06283D",
+    "secondaryColor": "#EB4747",
+    "secondaryColorDarkVariant" : "#EB4747",
+    "secondaryColorLightVariant" : "#EB4747",
 
     // A tertiary color is subtle as to avoid being distracting
     "tertiaryColor" : "#A2B5BB",
@@ -33,9 +33,9 @@ const colorPalette = {
     // Surface colors affect surfaces of components, such as cards, sheets, and menus.
     "surfaceColor" : "white",
 
-    // The background color appears behind scrollable content
-    // Error color indicates errors in components, such as invalid text in a text field. 
+    // The background color appears behind scrollable content 
     "backgroundColor" : "white",
+    // Error color indicates errors in components, such as invalid text in a text field.
     "errorColor" : "#EB4747",
 
     // “on” colors refer to the fact that they color elements that appear “on” top of surfaces
@@ -44,7 +44,7 @@ const colorPalette = {
     "onPrimaryColor" : "white",
     "onSecondaryColor" :"white",
     "onTertiary" : "#06283D",
-    "onSurfaceColor" : "white",
+    "onSurfaceColor" : "#06283D",
     "onBackgroundColor" : "#06283D",
     "onErrorColor" : "white",
 

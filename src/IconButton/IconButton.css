@@ -1,0 +1,46 @@
+.button_element{
+    width: var(--button-width);
+    height: var(--button-height);
+    padding: var(--padding);
+    margin: var(--margin);
+  
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+  
+    background-color: var(--background-color);
+    color: var(--font-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    transition: all 0.3s ease-in-out;
+  }
+  
+.button_element:hover{
+    background-color: var(--hover-background-color);
+    border-color: var(--hover-background-color);
+    transition: all 0.3s ease-in-out;
+  
+    box-shadow: 1px 1px 6px var(--shadow-color);
+  }
+  
+.button_element:active{
+    background-color: var(--active-background-color);
+    border-color: var(--active-background-color);
+
+    transition: all 0.1s ease-in-out;
+  }
+
+.button_element_icon{
+    width: var(--icon-width);
+    height: var(--icon-height);
+    border-radius: var(--border-radius);
+    /*To fit the image size the entire button size so it's image color can be inverted when button is pressed*/
+    padding: calc(var(--button-height) - var(--icon-height)) calc(var(--button-width) - var(--icon-width));
+}
+
+.button_element_icon:hover{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}

@@ -20,12 +20,12 @@ const defaultTextAreaStyle={
 
     "--border-color": colorPalette.backgroundColor,
     "--input-font-color": colorPalette.onTertiary,
-    "--shadow-color" : colorPalette.shadowColor
-}
+    "--shadow-color" : colorPalette.shadowColor,
 
-const defaultLabelStyle={
+    // Label
+
     "--label-font-size" : "0.8rem",
-    "--label-font-color": colorPalette.secondaryColor,
+    "--label-font-color": colorPalette.onBackgroundColor,
 }
 
-export {defaultTextAreaStyle, defaultLabelStyle}
+export default defaultTextAreaStyle

@@ -1,6 +1,6 @@
 import {useState} from "react";
 import {getInput, colorPalette} from "../helper";
-import {defaultLabelStyle, defaultTextFieldStyle} from "./defaultStyles"
+import defaultStyle from "./defaultStyle"
 
 import Label from "../Label/Label";
 
@@ -17,13 +17,12 @@ function TextField(props) {
     const placeHolder = getInput(props.placeHolder, "Type here...");
     const value = getInput(props.value, defaultValue);
     const onChange = getInput(props.onChange, (event)=>setDefaultValue(event.target.value));
-    const style = getInput(props.style, defaultTextFieldStyle);
-    const labelStyle = getInput(props.labelStyle, defaultLabelStyle);
+    const style = getInput(props.style, defaultStyle);
     
 
     return (
         <div className="TextField" style = {style}>
-            <Label name={label} style={labelStyle}></Label>
+            <Label name={label} style={style}></Label>
             <input
                 type = {type} 
                 value = {value} 

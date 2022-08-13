@@ -1,31 +1,47 @@
 .Select{
-    margin: var(--margin);
+    margin: var(--select-margin);
 }
 
 .select_button{
-    width: var(--width);
-    height: var(--height);
-    padding: var(--padding);
+    width: var(--select-width);
+    height: var(--select-height);
+    padding: var(--select-padding);
 
-    border: var(--border-width) solid var(--border-color);
-    border-radius: var(--border-radius);
+    border: var(--select-border-width) solid var(--select-border-color);
+    border-radius: var(--select-border-radius);
 
-    background-color: var(--background-color);
-    color: var(--font-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--select-background-color);
+    color: var(--select-font-color);
 
     transition: all 0.3s ease-in-out;
 }
 
 .option{
-    margin-left: var(--margin)
+    margin-left: var(--select-margin)
 }
 
 .select_button:focus{
-    border-color: var(--active-border-color);
+    border-color: var(--select-active-border-color);
     transition: all 0.1s ease-in-out;
 }
 
 .select_button:hover{
-    border-color: var(--hover-border-color);
+    border-color: var(--select-hover-border-color);
     transition: all 0.1s ease-in-out;
+}
+
+.button_pointer-hide{
+    display: none;
+}
+.button_pointer-show{
+    display: inline-block;
+}
+
+.button_pointer{
+    font-size: 0.6rem;
+    color: var(--select-)
 }

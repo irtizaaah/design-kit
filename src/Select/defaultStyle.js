@@ -1,60 +1,67 @@
 import {colorPalette} from "../helper";
 
-const defaultSelectStyle={
+const defaultStyle={
+    //Select
     // size
-    "--height": "40px",
-    "--width": "220px",
-    "--border-width": "1px",
+    "--select-height": "40px",
+    "--select-width": "220px",
+    "--select-border-width": "1px",
 
     // space
-    "--padding": "10px",
-    "--margin": "10px",
+    "--select-padding": "10px",
+    "--select-margin": "10px",
 
     // shape
-    "--border-radius": "5px",
+    "--select-border-radius": "5px",
 
     // color
-    "--background-color": colorPalette.backgroundColor,
-    "--hover-background-color": colorPalette.backgroundColor,
-    "--active-background-color": colorPalette.backgroundColor,
+    "--select-background-color": colorPalette.backgroundColor,
+    "--select-hover-background-color": colorPalette.backgroundColor,
+    "--select-active-background-color": colorPalette.backgroundColor,
 
-    "--hover-border-color": colorPalette.primaryColor,
-    "--active-border-color": colorPalette.primaryColor,
+    "--select-hover-border-color": colorPalette.primaryColor,
+    "--select-active-border-color": colorPalette.primaryColor,
 
-    "--border-color": colorPalette.tertiaryColor,
-    "--font-color": colorPalette.onBackgroundColor
-};
+    "--select-border-color": colorPalette.tertiaryColor,
+    "--select-font-color": colorPalette.onBackgroundColor,
 
-const defaultLabelStyle={
+    // Label
     "--label-font-size" : "0.8rem",
     "--label-font-color": colorPalette.secondaryColor,
-}
 
-const defaultOptionsContainerStyle = {
-    // shape
-    "--border-radius": "5px",
-    "--border-width": "1px",
-
-    // color
-    "--border-color": colorPalette.tertiaryColor,
-    "--background-color": colorPalette.backgroundColor,
-    "--shadow-color": colorPalette.shadowColor
-}
-defaultOptionsContainerStyle["--width"] = "220px";
-
-const defaultOptionStyle = {
+    // Options Container
     // size
-    "--width" : "100%",
-    "--height" : "40px",
+        // updated down below
+    // shape
+    "--options_container-border-radius": "5px",
+    "--options_container-border-width": "1px",
+    "--options_container-shadow-color": colorPalette.shadowColor,
 
     // color
-    "--border-color": colorPalette.tertiaryColor,
-    "--hover-option-background-color": colorPalette.primaryColor,
-    "--hover-option-font-color" : colorPalette.onPrimaryColor,
-    "--active-option-background-color": colorPalette.primaryColorLightVariant,
+    "--options_container-border-color": colorPalette.tertiaryColor,
+    "--options_container-background-color": colorPalette.backgroundColor,
+    
+    // Option
+    // size
+    "--option-width" : "100%",
+    "--option-height" : "40px",
 
-    "--shadow-color": colorPalette.shadowColor
+    // space
+    "--option-padding": "10px",
+
+    // shape
+    "--option-border-radius": "5px",
+
+    // color
+    "--option-font-color" : colorPalette.onBackgroundColor,
+    "--option-hover-font-color" : colorPalette.onPrimaryColor,
+
+    "--option-hover-background-color": colorPalette.primaryColor,
+    "--option-active-background-color": colorPalette.primaryColorLightVariant
 }
 
-export {defaultSelectStyle, defaultLabelStyle, defaultOptionsContainerStyle, defaultOptionStyle};
+// Options Container
+// size
+defaultStyle["--options_container-width"] = defaultStyle["--select-width"];
+export default defaultStyle;
 
